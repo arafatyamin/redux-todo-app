@@ -30,4 +30,12 @@ export const AddTodo = todo => {
       payload: { id: todoId },
     };
   };
+//   export const RemainingTodo = status => {
+//     console.log(status)
+//     return {
+//       type: 'REMAINING_TODO',
+//       payload: { status: status },
+
+//     };
+//   };
   
