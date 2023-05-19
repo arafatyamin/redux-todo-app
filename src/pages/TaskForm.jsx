@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addTodo } from '../store/action/taskAction';
+import { AddTodo } from '../store/action/taskAction';
 
 const TaskForm = () => {
   const [text, setText] = useState('');
@@ -9,7 +9,7 @@ const TaskForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
     if (text.trim() !== '') {
-      dispatch(addTodo({
+      dispatch(AddTodo({
         id: Date.now(),
         text,
         completed: false

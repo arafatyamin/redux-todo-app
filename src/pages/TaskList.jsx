@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { COMPLETED, ONGOING, removeTodo, Todo } from '../store/action/taskAction';
+import { Completed, Ongoing, RemoveTodo, Todo } from '../store/action/taskAction';
 
 const TaskList = () => {
   const tasks = useSelector(state => state);
@@ -9,14 +9,14 @@ const TaskList = () => {
     dispatch(Todo(todoId));
   };
   const handleOngoing = todoId => {
-    dispatch(ONGOING(todoId));
+    dispatch(Ongoing(todoId));
   };
   const handleCompleted = todoId => {
-    dispatch(COMPLETED(todoId));
+    dispatch(Completed(todoId));
   };
 
   const handleRemoveTodo = todoId => {
-    dispatch(removeTodo(todoId));
+    dispatch(RemoveTodo(todoId));
   };
 
   return (

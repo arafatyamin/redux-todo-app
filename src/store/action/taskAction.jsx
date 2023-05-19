@@ -1,4 +1,4 @@
-export const addTodo = todo => {
+export const AddTodo = todo => {
     return {
       type: 'ADD_TODO',
       payload: todo,
@@ -11,20 +11,20 @@ export const addTodo = todo => {
       payload: { id: todoId },
     };
   };
-  export const ONGOING = todoId => {
+  export const Ongoing = todoId => {
     return {
       type: 'ONGOING',
       payload: { id: todoId },
     };
   };
-  export const COMPLETED = todoId => {
+  export const Completed = todoId => {
     return {
       type: 'COMPLETED',
       payload: { id: todoId },
     };
   };
   
-  export const removeTodo = todoId => {
+  export const RemoveTodo = todoId => {
     return {
       type: 'REMOVE_TODO',
       payload: { id: todoId },
